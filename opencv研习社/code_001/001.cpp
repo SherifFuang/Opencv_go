@@ -16,7 +16,7 @@ int main(int artc, char** argv) {
 	imshow("input", src);
 
 	waitKey(0);
-	return 0;
+	return 0;//
 }
 
 
