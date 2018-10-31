@@ -1,5 +1,4 @@
-# Opencv_go
-
+Opencv研习社中用C++和python两种语言一并讲解知识点
 牢固掌握OpenCV系统化约300个知识点与相关函数使用
 完整的OpenCV与计算机视觉学习路线图像如下：
 1. OpenCV IO模块 - （图像与视频读写）
