@@ -24,11 +24,11 @@ int main(int artc, char** argv) {
 	Mat m3 = src;
 
 	// 创建空白图像
-	Mat m4 = Mat::zeros(src.size(), src.type());
-	Mat m5 = Mat::zeros(Size(512, 512), CV_8UC3);
+	Mat m4 = Mat::zeros(src.size(), src.type());//创建一个数据大小类型都一样的
+	Mat m5 = Mat::zeros(Size(512, 512), CV_8UC3);//创建空白图像，宽512，高512，CV_8UC3是3通道的字节类型
 	Mat m6 = Mat::ones(Size(512, 512), CV_8UC3);
 
-	Mat kernel = (Mat_<char>(3, 3) << 0, -1, 0,
+	Mat kernel = (Mat_<char>(3, 3) << 0, -1, 0,//char类型的3*3数组
 		-1, 5, -1,
 		0, -1, 0);
 

@@ -1,8 +1,8 @@
 import cv2 as cv
 import numpy as np
 
-src1 = cv.imread("D:/vcprojects/images/LinuxLogo.jpg");
-src2 = cv.imread("D:/vcprojects/images/WindowsLogo.jpg");
+src1 = cv.imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\LinuxLogo.jpg");
+src2 = cv.imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\WindowsLogo.jpg");
 cv.imshow("input1", src1)
 cv.imshow("input2", src2)
 h, w, ch = src1.shape

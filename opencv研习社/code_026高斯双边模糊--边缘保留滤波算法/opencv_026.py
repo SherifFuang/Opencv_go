@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-src = cv.imread("D:/images/example.png")
+src = cv.imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\example.png")
 cv.namedWindow("input", cv.WINDOW_AUTOSIZE)
 cv.imshow("input", src)
 

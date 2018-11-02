@@ -1,3 +1,4 @@
+//图像像素遍历与访问，有两种方法访问像素点值，如下， 指针效率更高。
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
@@ -13,7 +14,7 @@ int main(int artc, char** argv) {
 	namedWindow("input", CV_WINDOW_AUTOSIZE);
 	imshow("input", src);
 
-	// 直接读取图像像素
+	// 方法一:直接读取图像像素
 	int height = src.rows;
 	int width = src.cols;
 	int ch = src.channels();
@@ -35,7 +36,7 @@ int main(int artc, char** argv) {
 	}
 	imshow("output", src);
 
-	// 指针读取
+	// 方法2：指针读取
 	Mat result = Mat::zeros(src.size(), src.type());
 	int blue = 0, green = 0, red = 0;
 	int gray;
@@ -48,7 +49,6 @@ int main(int artc, char** argv) {
 					blue = *curr_row++;
 					green = *curr_row++;
 					red = *curr_row++;
-
 					*result_row++ = blue;
 					*result_row++ = green;
 					*result_row++ = red;

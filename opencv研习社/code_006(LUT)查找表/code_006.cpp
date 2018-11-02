@@ -1,3 +1,6 @@
+//查找表参考解释：https://blog.csdn.net/jameshater/article/details/50759650
+//按我的理解就是：通过查找表，简单理解为映射函数，就是一种对应关系，对着这个表来变。 比如原图中灰度为0-100的都会变为新图中灰度0， 100-200变成1，200以上变成2.  这样新图只有三个灰度级，
+//也可以这么说，查找表是简单的查询操作替换运行时计算的数组，在图像处理中，查找表经常称为LUT，它们将索引号与输出值建立联系。颜色表作为一种普通的 LUT 是用来确定特定图像所要显示的颜色和强度。
 #include <opencv2/opencv.hpp>
 #include <iostream>
 
@@ -6,7 +9,7 @@ using namespace std;
 void customColorMap(Mat &image);
 int main(int argc, const char *argv[])
 {
-	Mat src = imread("D:/vcprojects/images/cos.jpg");
+	Mat src = imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\daopian.png");
 	if (src.empty())
 	{
 		printf("could not load image...\n");
