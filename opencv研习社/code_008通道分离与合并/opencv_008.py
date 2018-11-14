@@ -1,13 +1,13 @@
 import cv2 as cv
 
-src = cv.imread("D:/vcprojects/images/flower.png")
+src = cv.imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\flower.png")
 cv.namedWindow("input", cv.WINDOW_AUTOSIZE)
 cv.imshow("input", src)
 
 # 蓝色通道为零
 mv = cv.split(src)
 mv[0][:, :] = 0
-dst1 = cv.merge(mv)
+dst1 = cv.merge(mv)#通道合并
 cv.imshow("output1", dst1)
 
 # 绿色通道为零

@@ -10,10 +10,10 @@ m1 = np.copy(src)
 
 # 赋值
 x = np.empty([3,2],dtype = int) #numpy.empty 方法用来创建一个指定形状（shape）、数据类型（dtype）且未初始化的数组：
-print(x)#[3,2]是三行二列？
+print(x)#[3,2]是三行二列
 
 m2 = src
-src[100:200,200:300,:] = 255 #。部分窗口可以改颜色，起点从100-200，宽度200至300
+src[100:200,50:300,:] = 255 #。部分窗口可以改颜色，左上（100，50）右下（200，300）的矩形窗口
 cv.imshow("m2",m2)
 
 m3 = np.zeros(src.shape, src.dtype)#numpy.zeros,创建指定大小的数组，数组元素以 0 来填充：
