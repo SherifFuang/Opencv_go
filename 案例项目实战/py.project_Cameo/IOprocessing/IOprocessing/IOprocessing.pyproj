@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1b609a25-2404-439e-b4e1-dae845f81c61</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>IOprocessing.py</StartupFile>
+    <StartupFile>managers.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +24,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="IOprocessing.py" />
+    <Compile Include="filters.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="managers.py" />
+    <Compile Include="cameo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{3296c783-7538-485c-a6f8-5f3f84d99c70}\3.5" />
