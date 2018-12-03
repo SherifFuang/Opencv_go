@@ -7,7 +7,7 @@ import numpy as np
 # THRESH_TOZERO = 3
 # THRESH_TOZERO_INV = 4
 #
-src = cv.imread("D:/images/lena.jpg")
+src = cv.imread("C:\\Users\\admin\\Documents\\Visual Studio 2015\\Projects\\Testphoto\\cat_test.png")
 cv.namedWindow("input", cv.WINDOW_AUTOSIZE)
 cv.imshow("input", src)
 h, w = src.shape[:2]
@@ -18,6 +18,7 @@ ret, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)
 print("ret :", ret)
 cv.imshow("binary", binary)
 
+#把两张图拼在一块
 result = np.zeros([h, w*2, 3], dtype=src.dtype)
 result[0:h,0:w,:] = src
 result[0:h,w:2*w,:] = cv.cvtColor(binary, cv.COLOR_GRAY2BGR)
